@@ -1,13 +1,5 @@
 import React, { useState } from "react";
-import {
-  SafeAreaView,
-  View,
-  Text,
-  TouchableOpacity,
-  StyleSheet,
-  TextInput,
-  StatusBar,
-} from "react-native";
+import {SafeAreaView,View,  Text,  TouchableOpacity,  StyleSheet,  TextInput,  StatusBar,} from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import {
   createNativeStackNavigator,
@@ -77,7 +69,7 @@ function HomeScreen({ navigation }: HomeProps) {
       <StatusBar barStyle="light-content" />
       <TopLeftStars />
 
-      <Text style={styles.title}>FreshCafe Chef Helper</Text>
+      <Text style={styles.title}>Chef Kiss Main Menu</Text>
 
       <TouchableOpacity
         style={styles.button}
@@ -114,6 +106,9 @@ function MenuScreen({ navigation }: MenuProps) {
     { name: "Wings and Ribs", price: "R250.00" },
     { name: "BBQ Wrap", price: "R250.00" },
     { name: "Rib Burger", price: "R125.00" },
+    { name: "Steak Sandwich", price: "R150.00" },
+    { name: "Caesar Salad", price: "R100.00" },
+    { name: "Grilled Chicken", price: "R200.00" },
   ];
 
   return (
